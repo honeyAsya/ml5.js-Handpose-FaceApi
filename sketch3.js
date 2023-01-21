@@ -52,10 +52,8 @@ function draw() {
  else if (state_hand === 'running') {
   running();
   }
-
-
-
 }
+
 function loading(){ //screen during model import
   background(255);
   push();
@@ -70,7 +68,6 @@ function running() { //start models
 
 drawKeypoints();
 FacePoints();
-
 }
 
 function FacePoints(){
@@ -82,7 +79,6 @@ function FacePoints(){
       point(points[a]._x, points[a]._y);
     } 
   }
-
 }
 
 function drawKeypoints() { //paint handpose results
